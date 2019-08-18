@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/all" method="GET">
+        <h1>LIST ALL FILES AT SERVER</h1>
+        <button>LIST</button>
+    </form>
+    <hr>
+    <form action="/upload" method="POST" encType="multipart/form-data">
+        <h1>UPLOAD</h1>
+        <input type="file" name="file" id="file">
+        <button>Kaydet</button>
+    </form>
+    <hr>
+    <form action="/download" method="POST">
+        <h1>DOWNLOAD TEST</h1>
+        <input type="text" placeholder="File full name to download" name="fileName">
+        <button>DOWNLOAD THE FILE</button>
+    </form>
+    <hr>
+    <form action="/delete" method="POST">
+        <h1>DELETE TEST</h1>
+        <input type="text" placeholder="File path to delete" name="fileToDelete">
+        <button>DELETE THE FILE</button>
+    </form>
+</body>
+
+</html>
